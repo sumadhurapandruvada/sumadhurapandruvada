@@ -1,0 +1,29 @@
+rice=1200
+oil=150
+sugar=40
+rg=100
+bg=100
+ename=input('enter customer name')
+ephno=int(input('enter customer phone number'))
+rq=int(input('enter no.of rice bags:'))
+oq=int(input('enter no.of oil packets:'))
+sq=int(input('enter sugar quantity:'))
+rgq=int(input('enter reg gram quantity:'))
+bgq=int(input('enter black gram quantity:'))
+bill=(rice*rq)+(oil*oq)+(sugar*sq)+(rg*rgq)+(bg*bgq)
+if(bill>5000):
+    dis=bill*10/100
+    tax=bill*10/100
+elif(bill>3000):
+    dis=bill*8/100
+    tax=bill*10/100
+elif(bill>2000):
+    dis=bill*5/100
+    tax=bill*18/100
+elif(bill>1000):
+    dis=bill*3/100
+    tax=bill*18/100
+else:
+    print('no discount')
+mainbill=bill-dis+tax
+print('bil amount',mainbill)
