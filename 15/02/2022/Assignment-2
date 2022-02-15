@@ -1,0 +1,7 @@
+#python program to print division
+a = int(input())
+    b = int(input())
+    c=a//b#integer division
+    d=a/b#float division
+    print(c)
+    print(d)
